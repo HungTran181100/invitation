@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Invitation</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .invitation {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: none;
+      width: 100%;
+      max-width: 400px;
+    }
+    h1 {
+      color: #ff69b4;
+      font-size: 6vw;
+    }
+    h2 {
+      color: #4b0082;
+      font-size: 5vw;
+    }
+    h3 {
+      color: #1e90ff;
+      font-size: 4vw;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 2vw 4vw;
+      font-size: 4vw;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 200px;
+    }
+    button:hover {
+      background-color: #a80059;
+    }
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
+  <body>
+    <img
+      src="KieuTran.gif"
+      alt="Birthday Invitation"
+      class="invitation"
+      style="display: none; height: 90vh; width: auto"
+    />
+
+    <div class="input">
+      <label
+        for="name"
+        style="font-size: 16px; color: #4b0082; margin-right: 10px"
+        >Enter Name:</label
+      >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        style="
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        "
+      />
+      <button onclick="showInvitation()">Click me to see the invitation</button>
+    </div>
+
+    <script>
+      function showInvitation() {
+        const name = document.getElementById("name").value;
+        if (name == "Kieu Tran") {
+          document.querySelector(".invitation").src = "KieuTran.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "My Nguyen") {
+          document.querySelector(".invitation").src = "MyNguyen.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Ty Tran") {
+          document.querySelector(".invitation").src = "TyTran.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Duc Uy") {
+          document.querySelector(".invitation").src = "DucUy.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Hang Thu") {
+          document.querySelector(".invitation").src = "HangThu.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Hong Nhung") {
+          document.querySelector(".invitation").src = "HongNhung.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Huyen Trang") {
+          document.querySelector(".invitation").src = "HuyenTrang.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Ngoc Bich") {
+          document.querySelector(".invitation").src = "NgocBich.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Nhu Y") {
+          document.querySelector(".invitation").src = "NhuY.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Thai Nguyen") {
+          document.querySelector(".invitation").src = "ThaiNguyen.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else if (name == "Thanh Man") {
+          document.querySelector(".invitation").src = "ThanhMan.gif";
+          document.querySelector(".invitation").style.display = "block";
+          document.querySelector(".input").style.display = "none";
+        } else {
+          alert("Please enter the correct name");
+        }
+      }
+    </script>
+  </body>
+</html>
